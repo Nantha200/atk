@@ -3558,7 +3558,6 @@ footer#pq-footer .pq-footer-bottom-list .row {
 }
 
 footer#pq-footer .pq-footer-img {
-	background: var(--primary-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
