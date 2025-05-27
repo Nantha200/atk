@@ -103,7 +103,7 @@
                                                 </li>
                                         
                                           <li class="menu-item">
-                                            <a href="gallery.html">Gallery</a>
+                                            <a href="product.html">Product</a>
                                           </li>
                                         <li class="menu-item current-menu-item">
                                             <a href="contact.html">Contact</a>
@@ -217,37 +217,29 @@
                         <p class="pq-section-description">We’re here to help you. Whether you have a question, want to collaborate, or just want to say hello — feel free to reach out. Our team will get back to you as soon as possible.</p>
                     </div>
                     <div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1662.5752679017107!2d77.49620615417831!3d10.040351830952748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3b076b3e8e527bad%3A0x6969f10c4fb359b7!2zVGhlbmkgR3VydSBLcmlzaG5hIFRleHRpbGUgTWlsbHMg4K6k4K-H4K6p4K6_IOCuleCvgeCusOCvgSDgrpXgrr_grrDgr4Hgrrfgr43grqPgrr7igKY!3m2!1d10.0403521!2d77.49798729999999!4m5!1s0x3b076b2d937426ab%3A0xd78da21c0cd60eea!2sATK%20MILLS%2C%202FWW%2BMG9%2C%20NGO%20Colony%2C%20Rathinam%20Nagar%2C%20Vadaveeranaickenpatty%2C%20Tamil%20Nadu%20625531!3m2!1d10.046657!2d77.49638999999999!5e1!3m2!1sen!2sin!4v1747637869302!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1662.5752679017107!2d77.49620615417831!3d10.040351830952748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3b076b3e8e527bad%3A0x6969f10c4fb359b7!2zVGhlbmkgR3VydSBLcmlzaG5hIFRleHRpbGUgTWlsbHMg4K6k4K-H4K6p4K6_IOCuleCvgeCusOCvgSDgrpXgrr_grrDgr4Hgrrfgr43grqPgrr7igKY!3m2!1d10.0403521!2d77.49798729999999!4m5!1s0x3b076b2d937426ab%3A0xd78da21c0cd60eea!2sATK%20MILLS%2C%202FWW%2BMG9%2C%20NGO%20Colony%2C%20Rathinam%20Nagar%2C%20Vadaveeranaickenpatty%2C%20Tamil%20Nadu%20625531!3m2!1d10.046657!2d77.49638999999999!5e1!3m2!1sen!2sin!4v1747637869302!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0 p-xl-0">
                     <div class="pq-form-div border-0 mt-0">
                         <h4 class="pq-form-title mb-2">Send Your Message</h4>
-                        <form class="pq-applyform">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input type="text" placeholder="Enter Name">
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <input type="email" placeholder="Email Address">
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <input type="text" placeholder="Phone Number">
-                                </div>
-                                <div class="col-lg-12">
-                                    <select>
-                                        <option value="Service 1" selected>Service 1</option>
-                                        <option value="Service 2">Service 2</option>
-                                        <option value="Service 3">Service 3</option>
-                                        <option value="Service 4">Service 4</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea cols="40" rows="10" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <a href="#" class="pq-button">SUBMIT</a>
-                                </div>
+                        <form class="pq-applyform" action="">
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <input type="text" id="name" placeholder="Enter Name">
                             </div>
+                            <div class="col-lg-6 col-md-6">
+                            <input type="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                            <input type="text" id="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="col-lg-12">
+                            <textarea cols="40" rows="10" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                            <button type="submit" class="pq-button" onclick="sendToWhatsapp(event)">SUBMIT</button>
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -295,7 +287,7 @@
                                          <li><a href="index.html" class="text-white">Home</a></li>
                                         <li><a href="about-us.html" class="text-white">About Us</a></li>
                                         <li><a href="our-services.html" class="text-white">Services</a></li>
-                                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                                        <li><a href="product.html" class="text-white">Product</a></li>
                                         <li><a href="contact.html" class="text-white">Contact</a></li>
                                     </ul>
                                 </div>
@@ -303,7 +295,7 @@
                         </div>
                         <div class="col-xl-3  col-md-6">
                             <div class="widget">
-                                <h4 class="footer-title">Usefull Links</h4>
+                                <h4 class="footer-title">Service</h4>
                                 <div class="menu-useful-links-container">
                                     <ul id="menu-useful-links" class="menu">
                                         <li><a href="#" class="text-white">Ginning Division</a></li>
@@ -377,6 +369,34 @@
     <script src="js/simplebar.min.js"></script>
     <!-- Custom js -->
     <script src="js/custom.js"></script>
+
+<script>
+  function sendToWhatsapp(event) {
+    event.preventDefault(); // Prevent form reload
+
+    let number = "+916369484309";
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Optional validation
+    if (!name || !email || !phone || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    let url = "https://wa.me/" + number + "?text=" +
+      "Name: " + encodeURIComponent(name) + "%0a" +
+      "Email: " + encodeURIComponent(email) + "%0a" +
+      "Phone: " + encodeURIComponent(phone) + "%0a" +
+      "Message: " + encodeURIComponent(message);
+
+    window.open(url, '_blank').focus();
+  }
+</script>
+
 </body>
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sg2plmcpnl492384'},{'dcenter':'sg2'},{'cp_id':'9858662'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
 <!-- Mirrored from peacefulqode.co.in/themes/textica/html/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 05:32:54 GMT -->
