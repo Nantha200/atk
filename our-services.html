@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 
-    <link rel="shortcut icon" href="images/logos/atk-logo.png">
+    <link rel="shortcut icon" href="images/logos/favicon-96x96.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
@@ -68,6 +68,20 @@
   50% { transform: scale(1.15); }
 }
 
+
+.read-toggle {
+  color: #000000;        /* Bootstrap-style blue */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Remove hover animation/effect */
+.read-toggle:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
     </style>
 </head>
 
@@ -92,9 +106,8 @@
                         <div class="pq-header-social text-right">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com/@atktextiles"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,9 +164,9 @@
                             </div>
                             
                            
-                            <div class="pq-toggle-btn">
+                            <!-- <div class="pq-toggle-btn">
                                 <a href="javascript:void(0)" class="menu-toggle">Menu</a>
-                            </div>
+                            </div> -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -205,15 +218,28 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-gutters pq-grey-bg">
+<div class="row no-gutters pq-grey-bg" style="background-color: #f0f0f0;">
                 <div class="col-xl-4 col-lg-6 col-md-6 p-0 wow animated fadeInUp">
                     <div class="pq-fancy-grid-box">
                         <div class="pq-fancy-box pq-style-2">
                             <div class="pq-fancy-box-info">
-                                <h5 class="pq-fancy-box-title">Cotton Ginning</h5>
-                                <p class="pq-fancybox-description">We begin at the root — sourcing cotton directly from ethical farms. Our ginning unit blends tradition with innovation to clean, sort, and bale raw cotton.</p>
+                                <h5 class="pq-fancy-box-title">Ginning</h5>
+<p class="pq-fancybox-description" id="cottonDesc">
+  Our story begins with ethically sourced, carefully grown cotton from farmers for its quality and responsible journey.
+ 
+    Our ginning  <span id="dots1">
+    <a href="javascript:void(0);" onclick="toggleReadMore(1)" class="read-toggle">Read more</a>
+  </span>
+  <span id="more1" style="display: none;">division, one of our significant operations, is a testament to the rich heritage of cotton production.
+    It employs a harmonious blend of traditional methods and machines with modern technology for cleaning, sorting,
+    and pressing the cotton into bales for further processing.
+    <a href="javascript:void(0);" onclick="toggleReadMore(1)" class="read-toggle"> Read less</a>
+  </span>
+</p>
+
+
                                 <div class="pq-fancy-box-icon">
-                                    <i class="fas fa-leaf"></i>
+                                    <img src="images/service-icon/ginning.png" alt="cotton ginning" class="img-fluid">
                                 </div>
                                 
                             </div>
@@ -225,13 +251,25 @@
                         <div class="pq-fancy-box pq-style-2">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Spinning</h5>
-                                <p class="pq-fancybox-description">We spin fibers into high-grade yarns using Compact, Open-End, and Vortex Airjet technologies in our in-house facility.</p>
-<div class="pq-fancy-box-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2a10 10 0 1010 10A10.011 10.011 0 0012 2zm1 17.93V20a1 1 0 01-2 0v-.07A8.006 8.006 0 014.07 13H4a1 1 0 010-2h.07A8.006 8.006 0 0111 4.07V4a1 1 0 012 0v.07A8.006 8.006 0 0119.93 11H20a1 1 0 010 2h-.07A8.006 8.006 0 0113 19.93zM12 8a4 4 0 104 4 4.005 4.005 0 00-4-4z"/>
-  </svg>
-</div>
-                               
+                                <p class="pq-fancybox-description">We spin fibers into high-grade yarns using Compact, Open-End, and Vortex Airjet technologies in our in-house facility.
+                                  <BR> <span id="dots2">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(2)" class="read-toggle">Read more</a>
+                </span>  
+                        <span id="more2" style="display: none;">
+                            softness balance effortlessly, flowing with 
+                            power and grace. The result is a product 
+                            that embodies precision and excellence in 
+                            every fiber. We produce quality yarns in 
+                            various blends at our in-house world-class 
+                            facility that include Compact Spinning, 
+                            Open End Spinning and Vortex Airjet 
+                            Spinning. <a href="javascript:void(0);" onclick="toggleReadMore(2)" class="read-toggle"> Read less</a>
+                        </span></p>
+
+                                <div class="pq-fancy-box-icon">
+                                    <img src="images/service-icon/spinning.png" alt="spinning" class="img-fluid">
+                                </div>
+                                                            
                             </div>
                         </div>
                     </div>
@@ -241,10 +279,21 @@
                         <div class="pq-fancy-box pq-style-2 border-end-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Sizing & Warping</h5>
-                                <p class="pq-fancybox-description">Our advanced Karl Mayer systems ensure that threads are perfectly prepared for weaving, minimizing breakage and ensuring efficiency.
+                                <p class="pq-fancybox-description">The growing global demand for high
+                                quality woven cotton, led us to invest in 
+                                cutting-edge technology. <BR>  <span id="dots3">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(3)" class="read-toggle">Read more</a>
+                </span>  
+                        <span id="more3" style="display: none;">Our state-of-the
+                                art Karl Mayer Sizing and Warping 
+                                machines now ensure that production 
+                                demands are met with precision, while 
+                                staying committed to unmatched quality. 
+                                <a href="javascript:void(0);" onclick="toggleReadMore(3)" class="read-toggle"> Read less</a>
+                        </span>
                                 </p>
                                 <div class="pq-fancy-box-icon">
-                                    <i class="fas fa-cogs"></i>
+                                    <img src="images/service-icon/wraping.png" alt="">
                                 </div>
                                
                             </div>
@@ -256,7 +305,23 @@
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Weaving</h5>
-                                <p class="pq-fancybox-description">We weave stories into fabric using Air-jet, Rapier, and Projectile Looms — producing textiles for luxury and commercial applications.
+                                <p class="pq-fancybox-description">Threads intertwine here at the weaving 
+                                    division to craft a fabric that is elegant and 
+                                    resilient. <BR>  <span id="dots4">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(4)" class="read-toggle">Read more</a>
+                </span>  
+                        <span id="more4" style="display: none;"> Each movement enhances the 
+                                    texture, resulting in a fabric that exudes 
+                                    both finesse and durability. Our vibrant 
+                                    collection of luxury fabrics celebrates 
+                                    diversity, offering an exquisite range of 
+                                    GSM and thread counts. Crafted on state
+                                    of-the-art Air-jet, Rapier, and Projectile 
+                                    Looms, these fabrics invite everyone to 
+                                    indulge in a tapestry of pride and 
+                                    individuality.
+                                    <a href="javascript:void(0);" onclick="toggleReadMore(4)" class="read-toggle"> Read less</a>
+                        </span>
                                 </p>
                                 <div class="pq-fancy-box-icon">
                                     <i class="fas fa-layer-group"></i>
@@ -271,10 +336,16 @@
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Dyeing & Finishing</h5>
-                                <p class="pq-fancybox-description">Color comes to life here. With Osthoff Singeing, CBR, Mercerizing, and CDR machines, we ensure vibrant, lasting dyes.
-                                </p>
+                                <p class="pq-fancybox-description">Our Dyeing Division features advanced singeing, bleaching, mercerizing, and dyeing machines that ensure smooth finish,    <BR> 
+                                     <span id="dots5">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(5)" class="read-toggle">Read more</a>
+                </span>   <span id="more5" style="display: none;">  color fastness, and fabric stability. 
+                                
+                With stenter and jigger machines, we handle all fabric types and batch sizes. Our lab ensures consistent quality and global standards.
+                                 <a href="javascript:void(0);" onclick="toggleReadMore(5)" class="read-toggle"> Read less</a>
+                        </span>  </p>
                                 <div class="pq-fancy-box-icon">
-                                    <i class="flaticon-threads-1"></i>
+                                    <img src="images/service-icon/dyening.png" alt="">
                                 </div>
                                
                             </div>
@@ -288,7 +359,19 @@
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Printing</h5>
-                                <p class="pq-fancybox-description">Your designs deserve precision. Our Rotary and Digital printing units deliver vibrant prints with superior clarity and consistency.
+                                <p class="pq-fancybox-description">Leveraging advanced technology, our
+                                    design and development team delivers
+                                    high-quality printed fabric with
+                                    immaculate results     <BR>  <span id="dots6">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(6)" class="read-toggle">Read more</a>
+                </span>   <span id="more6" style="display: none;"> and superior print
+                                    quality. We ensure consistent and top-tier
+                                    products through cutting-edge automated
+                                    Digital and Rotary printing processes.
+                                    A well-equipped laboratory and testing
+                                    setup ensures perfection, traceability, and
+                                    reliability in our process.<a href="javascript:void(0);" onclick="toggleReadMore(6)" class="read-toggle"> Read less</a>
+                        </span> 
                                 </p>
                                 <div class="pq-fancy-box-icon">
                                     <i class="fas fa-palette"></i>
@@ -304,10 +387,17 @@
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Quilting & Embroidery</h5>
-                                <p class="pq-fancybox-description">Our quilting and embroidery units use multi-needle and automated embroidery machines to create detailed, luxurious pieces.
+                                <p class="pq-fancybox-description">Our advanced lineup of embroidery
+                                machines enables you to reproduce
+                                designs and artwork with the finest detail
+                                with <BR>  <span id="dots7">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(7)" class="read-toggle">Read more</a>
+                </span>   <span id="more7" style="display: none;">  limitless quality and creativity to suit
+                                each customer needs.<a href="javascript:void(0);" onclick="toggleReadMore(7)" class="read-toggle"> Read less</a>
+                        </span> 
                                 </p>
                                 <div class="pq-fancy-box-icon">
-                                    <i class="fas fa-pencil-ruler"></i>
+                                    <img src="images/ATK_IMG/em.png" alt="">
                                 </div>
                                 
                             </div>
@@ -319,11 +409,45 @@
                     <div class="pq-fancy-grid-box">
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
-                                <h5 class="pq-fancy-box-title">Cutting, Stitching & Washing</h5>
-                                <p class="pq-fancybox-description">Precision cutting and stitching turn fabric into function — tailored to your specifications.
+                                <h5 class="pq-fancy-box-title">Cutting, Sewing & Finishing</h5>
+                                <p class="pq-fancybox-description">Each cut, defines the unique identity of the
+                                    industries we serve. Every piece is tailored
+                                    to blend functionality with design, <BR>  <span id="dots8">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(8)" class="read-toggle">Read more</a>
+                </span>   <span id="more8" style="display: none;"> 
+                                    ensuring precision and customization to
+                                    meet specific needs. Every creation fits its
+                                    vision perfectly, regardless of the industry.
+                                    <a href="javascript:void(0);" onclick="toggleReadMore(8)" class="read-toggle"> Read less</a>
+                        </span> 
                                 </p>
                                 <div class="pq-fancy-box-icon">
                                     <i class="fas fa-cut"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 p-0 wow animated fadeInUp">
+                    <div class="pq-fancy-grid-box">
+                        <div class="pq-fancy-box pq-style-2 border-bottom-0">
+                            <div class="pq-fancy-box-info">
+                                <h5 class="pq-fancy-box-title">Garment Washing</h5>
+                                <p class="pq-fancybox-description">Our modernised washing unit, featuring
+                                the latest machines, offers a range of
+                                garment wash options. <BR>  <span id="dots9">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(9)" class="read-toggle">Read more</a>
+                </span>   <span id="more9" style="display: none;">  Our facility
+                                enhances the product in terms of aesthetic
+                                and tactile appeal, besides offering value
+                                for money to the end user.
+                                <a href="javascript:void(0);" onclick="toggleReadMore(9)" class="read-toggle"> Read less</a>
+                        </span> 
+                                </p>
+                                <div class="pq-fancy-box-icon">
+                                    <img src="images/service-icon/washing.png" alt="">
                                 </div>
                                 
                             </div>
@@ -336,7 +460,16 @@
                         <div class="pq-fancy-box pq-style-2 border-bottom-0">
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Quality Control</h5>
-                                <p class="pq-fancybox-description">Nothing leaves ATK without thorough testing. Our lab ensures compliance, durability, and aesthetic excellence.
+                                <p class="pq-fancybox-description">The ATK Group's growth is driven by our
+                                    ability to meet diverse needs, ranging from
+                                    regional demands to international trends. <BR>  <span id="dots10">
+                    <a href="javascript:void(0);" onclick="toggleReadMore(10)" class="read-toggle">Read more</a>
+                </span>   <span id="more10" style="display: none;"> 
+                                    Each piece of fabric is carefully examined
+                                    to ensure perfection. This meticulous
+                                    process reveals a timeless quality that
+                                    stands strong and enduring.<a href="javascript:void(0);" onclick="toggleReadMore(10)" class="read-toggle"> Read less</a>
+                        </span> 
                                 </p>
                                 <div class="pq-fancy-box-icon">
                                     <i class="fas fa-check-circle"></i>
@@ -353,11 +486,28 @@
                             <div class="pq-fancy-box-info">
                                 <h5 class="pq-fancy-box-title">Sustainable Manufacturing</h5>
                                 <p class="pq-fancybox-description">With a Zero Liquid Discharge (ZLD) facility and 80% renewable energy usage, we put the planet first.
-                                </p>
+                                </p><BR />
                                 <div class="pq-fancy-box-icon">
-                                    <i class="fas fa-recycle"></i>
+                                    <img src="images/service-icon/sustainable.png" alt="">
                                 </div>
                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 p-0 wow animated fadeInUp">
+                    <div class="pq-fancy-grid-box">
+                        <div class="pq-fancy-box pq-style-2 border-bottom-0">
+                            <div class="pq-fancy-box-info">
+                                <h5 class="pq-fancy-box-title">Certifications</h5>
+                                <p class="pq-fancybox-description">Our certifications are more than just
+                                standards. They are symbols of our
+                                commitment to excellence, integrity, and
+                                trust.</p>
+                                <div class="pq-fancy-box-icon">
+                                    <img src="images/service-icon/certificate.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,9 +596,8 @@
                             <div class="pq-footer-social">
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@atktextiles"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -468,6 +617,25 @@
         </a>
     </div>
     <!-- Back To Top -->
+
+<script>
+  function toggleReadMore(id) {
+    var dots = document.getElementById("dots" + id);
+    var moreText = document.getElementById("more" + id);
+    var btnText = document.getElementById("btn" + id);
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Read less";
+    } else {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read more";
+    }
+  }
+</script>
+
 
     <!--jquery js-->
     <script src="js/jquery.min.js"></script>

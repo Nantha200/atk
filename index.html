@@ -9,7 +9,7 @@
   <meta name="description" content="ATK Group is a vertically integrated textile manufacturer in Theni, Tamil Nadu. From cotton ginning to fabric finishing, we provide complete textile solutions." />
   <meta name="keywords" content="ATK Group, textile, manufacturer, Tamil Nadu, ginning, spinning, weaving, dyeing, printing, stitching, atk mill, atk mill in theni" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/logos/atk-logo.png">
+    <link rel="shortcut icon" href="images/logos/favicon-96x96.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- LOADING FONTS AND ICONS -->
@@ -36,6 +36,12 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 <!-- jQuery -->
@@ -70,9 +76,8 @@
                         <div class="pq-header-social text-right">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com/@atktextiles"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -130,9 +135,9 @@
                             </div>
                             
                            
-                            <div class="pq-toggle-btn">
+                            <!-- <div class="pq-toggle-btn">
                                 <a href="javascript:void(0)" class="menu-toggle">Menu</a>
-                            </div>
+                            </div> -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +148,7 @@
                 </div>
             </div>
         </div>
-    </header>m0 
+    </header>
     <!-- Header -->
 
 <!-- Fullscreen Video Banner -->
@@ -159,100 +164,134 @@
 
 
 <!-- Service Section -->
+<!-- Service Section -->
 <section class="service pq-bg-grey py-5">
-    <div class="container">
-        <div class="row align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
 
-            <!-- Section Title -->
-            <div class="col-xl-4 wow animated fadeInLeft mb-4 mb-xl-0">
-                <div class="pq-section-title pq-style-1 pq-mb-45">
-                    <span class="pq-section-sub-title">
-                        <img decoding="async" src="images/section-title/title-icon-primary.png" alt="icon">our services
-                    </span>
-                    <h5 class="pq-section-main-title">Exploring the Role of Textiles</h5>
-                    <p class="pq-section-description">
-                        ATK Group provides complete textile solutions — from ginning and spinning to dyeing, printing, stitching, and finishing — ensuring unmatched quality across every step.
-                    </p>
+      <!-- Section Title -->
+      <div class="col-xl-4 wow animated fadeInLeft mb-4 mb-xl-0">
+        <div class="pq-section-title pq-style-1 pq-mb-45">
+          <span class="pq-section-sub-title">
+            <img decoding="async" src="images/section-title/title-icon-primary.png" alt="icon">our services
+          </span>
+          <h5 class="pq-section-main-title">Exploring the Role of Textiles</h5>
+          <p class="pq-section-description">
+            ATK Group provides complete textile solutions — from ginning and spinning to dyeing, printing, stitching, and finishing — ensuring unmatched quality across every step.
+          </p>
 
-                    <!-- "See More" Button -->
-                    <a href="our-services.html" class="pq-button mt-3">
-                        <div class="pq-button-block">
-                            <span class="pq-button-text">See more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pq-svg-arrow" width="34.899" height="14.585" viewBox="0 0 34.899 14.585">
-                                <path d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
-                                      transform="translate(34.399 14.056) rotate(180)" fill="currentColor" stroke="currentColor" stroke-width="1" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+          <!-- "See More" Button -->
+          <a href="our-services.html" class="pq-button mt-3">
+            <div class="pq-button-block">
+              <span class="pq-button-text">See more</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="pq-svg-arrow" width="34.899" height="14.585" viewBox="0 0 34.899 14.585">
+                <path d="M.5,6.388c6.609,0,11.487-6.142,11.535-6.2a.6.6,0,0,1,.684-.131.33.33,0,0,1,.176.513A19.589,19.589,0,0,1,4.765,6.388H33.4c.275,0,.5.168.5.376s-.223.376-.5.376H4.765a19.591,19.591,0,0,1,8.128,5.822.331.331,0,0,1-.179.514.6.6,0,0,1-.68-.133c-.048-.062-4.926-6.2-11.535-6.2-.275,0-.5-.168-.5-.376S.223,6.388.5,6.388Z"
+                  transform="translate(34.399 14.056) rotate(180)" fill="currentColor" stroke="currentColor" stroke-width="1" />
+              </svg>
             </div>
+          </a>
+        </div>
+      </div>
 
-            <!-- Services Carousel -->
-            <div class="col-xl-8 wow animated fadeInRight">
-                <div class="owl-carousel service-carousel owl-theme">
+      <!-- Services Carousel -->
+      <div class="col-xl-8 wow animated fadeInRight">
+        <div class="owl-carousel service-carousel owl-theme">
 
-                    <!-- Service Card -->
-                    <div class="pq-service-box pq-style-1">
-                        <div class="pq-service-media">
-                            <img src="images/service-single/3.png" alt="Ginning Division">
-                        </div>
-                        <div class="pq-service-box-info">
-                            <div class="pq-service-icon">
-                                <i class="flaticon-clothes"></i>
-                            </div>
-                            <h4 class="pq-service-box-title">Ginning Division</h4>
-                            <p class="pq-service-box-description">Ethically sourced cotton is cleaned and processed using advanced ginning machinery, forming the base for premium fabric production.</p>
-                        </div>
-                    </div>
-
-                    <div class="pq-service-box pq-style-1">
-                        <div class="pq-service-media">
-                            <img src="images/service-single/4.png" alt="Spinning & Weaving">
-                        </div>
-                        <div class="pq-service-box-info">
-                            <div class="pq-service-icon">
-                                <i class="flaticon-knitting"></i>
-                            </div>
-                            <h4 class="pq-service-box-title">Spinning</h4>
-                            <p class="pq-service-box-description">We spin fibers into high-grade yarns using Compact, Open-End, and Vortex Airjet technologies in our in-house facility.</p>
-                        </div>
-                    </div>
-
-                   <div class="pq-service-box pq-style-1">
-                        <div class="pq-service-media">
-                            <img src="images/service-single/6.png" alt="Weaving">
-                        </div>
-                        <div class="pq-service-box-info">
-                            <div class="pq-service-icon">
-                                <i class="flaticon-pin"></i>
-                            </div>
-                            <h4 class="pq-service-box-title">Weaving</h4>
-                            <p class="pq-service-box-description">
-                                We weave stories into fabric using Air-Jet, Rapier, and Projectile Looms — producing high-quality textiles for luxury and commercial applications.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="pq-service-box pq-style-1">
-                        <div class="pq-service-media">
-                            <img src="images/ATK_IMG/processing.png" alt="Weaving">
-                        </div>
-                        <div class="pq-service-box-info">
-                            <div class="pq-service-icon">
-                                <i class="flaticon-pin"></i>
-                            </div>
-                            <h4 class="pq-service-box-title">Processing</h4>
-                            <p class="pq-service-box-description">
-                                Our Processing division includes 150 tones fabric bleaching capacity with 105 inches, 8-color rotary printing unit.                            </p>
-                        </div>
-                    </div>
-
-                </div> <!-- End Carousel -->
+          <!-- Ginning -->
+          <div class="pq-service-box pq-style-1">
+            <div class="pq-service-media">
+              <img src="images/service-single/3.png" alt="Ginning Division">
             </div>
+            <div class="pq-service-box-info">
+              <div class="pq-service-icon">
+                <i class="flaticon-clothes"></i>
+              </div>
+              <h4 class="pq-service-box-title">Ginning</h4>
+              <p class="pq-service-box-description">
+                Ethically sourced cotton is cleaned and processed using advanced ginning machinery, forming the base for premium fabric production.
+              </p>
+            </div>
+          </div>
+
+          <!-- Spinning -->
+          <div class="pq-service-box pq-style-1">
+            <div class="pq-service-media">
+              <img src="images/service-single/4.png" alt="Spinning & Weaving">
+            </div>
+            <div class="pq-service-box-info">
+              <div class="pq-service-icon">
+                <i class="flaticon-knitting"></i>
+              </div>
+              <h4 class="pq-service-box-title">Spinning</h4>
+              <p class="pq-service-box-description">
+                We spin fibers into high-grade yarns using Compact, Open-End, and Vortex Airjet technologies in our in-house facility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Weaving -->
+          <div class="pq-service-box pq-style-1">
+            <div class="pq-service-media">
+              <img src="images/service-single/6.png" alt="Weaving">
+            </div>
+            <div class="pq-service-box-info">
+              <div class="pq-service-icon">
+                <i class="flaticon-pin"></i>
+              </div>
+              <h4 class="pq-service-box-title">Weaving</h4>
+              <p class="pq-service-box-description">
+                We weave stories into fabric using Air-Jet, Rapier, and Projectile Looms — producing high-quality textiles for luxury and commercial applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- Processing with Read More -->
+          <div class="pq-service-box pq-style-1">
+            <div class="pq-service-media">
+              <img src="images/ATK_IMG/processing.png" alt="Processing">
+            </div>
+            <div class="pq-service-box-info">
+              <div class="pq-service-icon">
+                <i class="flaticon-pin"></i>
+              </div>
+              <h4 class="pq-service-box-title">Processing</h4>
+              <p class="pq-service-box-description">
+                Every step in our process, from the ginning to the spinning, and every thread we spin, carries a promise to deliver products globally that
+                <span class="dots">...</span>
+                <span class="more-text" style="display: none;">
+                  represent the hallmark of excellence for which ATK Group is renowned. In our preparatory division, we uphold the same commitment to quality, ensuring that each fiber undergoes meticulous processing before it reaches its next stage.
+                </span>
+              </p>
+              <a href="javascript:void(0);" class="read-toggle" onclick="toggleReadMore(this)">Read more</a>
+            </div>
+          </div>
 
         </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
+<!-- Read More Script -->
+<script>
+  function toggleReadMore(element) {
+    const parent = element.closest(".pq-service-box-info");
+    const dots = parent.querySelector(".dots");
+    const moreText = parent.querySelector(".more-text");
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      element.textContent = "Read less";
+    } else {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      element.textContent = "Read more";
+    }
+  }
+</script>
+
 <!-- End Service Section -->
 
 
@@ -379,7 +418,6 @@ $(document).ready(function(){
                         <div class="pq-counter-top">
                             <div class="pq-counter-num-prefix">
                                 <h5 class="timer" data-to="30" data-speed="2000">30</h5>
-                                <span class="pq-counter-prefix">+</span>
                             </div>
                             <div class="pq-counter-icon">
                                 <i class="flaticon-experience"></i>
@@ -398,7 +436,6 @@ $(document).ready(function(){
                         <div class="pq-counter-top">
                             <div class="pq-counter-num-prefix">
                                 <h5 class="timer" data-to="5000" data-speed="2000">5000</h5>
-                                <span class="pq-counter-prefix">+</span>
                             </div>
                             <div class="pq-counter-icon">
                                 <i class="flaticon-worker"></i>
@@ -415,10 +452,9 @@ $(document).ready(function(){
                 <div class="pq-counter pq-style-1 pq-counter-padding border-end-0 border-bottom-0">
                     <div class="pq-counter-info">
                         <div class="pq-counter-top">
-                            <div class="pq-counter-top">
                             <div class="pq-counter-num-prefix">
-                          
-                            </div><br><br>
+                                <h5 class=""><img src="images/service-icon/global-icon.png" alt="" style="width:65px;"></h5>
+                            </div>
                             <div class="pq-counter-icon">
                                 <i class="flaticon-worker"></i>
                             </div>
@@ -505,9 +541,16 @@ $(document).ready(function(){
             <!-- Contact Info -->
             <div class="col-xl-7 mt-4 mt-xl-0 p-xl-0 wow animated fadeInRight">
                 <div class="pq-testimonial-div">
-                  <img src="images/ATK_IMG/home-img.png">
-
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/ATK_IMG/home-img.png" alt="Slide 1"></div>
+                        <div class="swiper-slide"><img src="images/ATK_HOME/img2.png" alt="Slide 2"></div>
+                        <div class="swiper-slide"><img src="images/ATK_HOME/img3.png" alt="Slide 3"></div>
+                        <div class="swiper-slide"><img src="images/ATK_HOME/img1.png" alt="Slide 4"></div>
+                    </div>
                 </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -594,9 +637,8 @@ $(document).ready(function(){
                             <div class="pq-footer-social">
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@atktextiles"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -617,6 +659,27 @@ $(document).ready(function(){
         </a>
     </div>
     <!-- Back To Top -->
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      }
+    }
+  });
+</script>
+
 
     <!--jquery js-->
     <script src="js/jquery.min.js"></script>
@@ -644,7 +707,6 @@ $(document).ready(function(){
     <script src="js/rev-custom.js"></script>
     <!--custom js-->
     <script src="js/custom.js"></script>
-
 
     
 <script>
